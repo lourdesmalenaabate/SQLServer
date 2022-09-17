@@ -1,0 +1,9 @@
+ALTER DATABASE CursoAnalisis_Archivos
+SET FILESTREAM
+(
+	NON_TRANSACTED_ACCESS = FULL,
+	DIRECTORY_NAME = 'CursoAnalisis_Compartido'
+)
+WITH NO_WAIT
+GO
+

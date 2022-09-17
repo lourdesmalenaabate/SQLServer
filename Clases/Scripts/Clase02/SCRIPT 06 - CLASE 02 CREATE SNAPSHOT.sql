@@ -1,0 +1,11 @@
+USE master
+GO
+
+CREATE DATABASE AdventureWorks2019_SS
+ON
+(
+	NAME = 'AdventureWorks2017', -- NOMBRE DEL ARCHIVO LOGICO A COPIAR
+	FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\AdventureWorks2019_SS.ss'
+)
+AS SNAPSHOT OF AdventureWorks2019
+GO

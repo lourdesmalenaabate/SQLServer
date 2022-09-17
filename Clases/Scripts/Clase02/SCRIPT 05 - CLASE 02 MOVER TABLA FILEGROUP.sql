@@ -1,0 +1,18 @@
+USE CursoAnalisis2
+GO
+
+-- ELIMINAR FK 
+ALTER TABLE Urbanizaciones DROP CONSTRAINT [FK__Urbanizac__Id_pr__267ABA7A]
+GO
+
+-- ELIMINAR PK
+ALTER TABLE Provincias DROP CONSTRAINT [PK__Provinci__3214EC078311F432]
+GO
+
+
+CREATE UNIQUE CLUSTERED INDEX PK_ID_1 ON Provincias
+(
+	Id -- asc desc
+)
+ON [PRIMARY]
+GO
